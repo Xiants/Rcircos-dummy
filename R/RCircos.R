@@ -1102,7 +1102,7 @@ RCircos.Line.Plot<-function(line.data, data.col, track.num, side)
 		point.bottom <- in.pos; data.ceiling <- 10;
 	} else {  
 		point.bottom <- in.pos + (RCircos.Par$track.height/2);  
-		data.ceiling <- 5;
+		data.ceiling <- 2;
 	}
 	sub.height <- out.pos-point.bottom;
 
@@ -1226,7 +1226,7 @@ RCircos.Scatter.Plot<-function(scatter.data, data.col, track.num, side, by.fold=
 		point.bottom <- in.pos; data.ceiling <- 10;
 	} else {  
 		point.bottom <- in.pos + (RCircos.Par$track.height/2);  
-		data.ceiling <- 5;
+		data.ceiling <- 2;
 	}
 	sub.height <- out.pos-point.bottom;
 
