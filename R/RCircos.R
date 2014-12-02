@@ -528,11 +528,11 @@ RCircos.Chromosome.Ideogram.Plot<-function()
 		#	_________________________________________________________
 		#	xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
-	#	pos.x<- c(RCircos.Pos[start:end,1]*outer.location, 
-	#		  	RCircos.Pos[end:start,1]*inner.location);
-	#	pos.y<- c(RCircos.Pos[start:end,2]*outer.location, 
-	#			RCircos.Pos[end:start,2]*inner.location);
-	#	polygon(pos.x, pos.y);
+		pos.x<- c(RCircos.Pos[start:end,1]*outer.location, 
+			  	RCircos.Pos[end:start,1]*inner.location);
+		pos.y<- c(RCircos.Pos[start:end,2]*outer.location, 
+				RCircos.Pos[end:start,2]*inner.location);
+		polygon(pos.x, pos.y);
 
 
 		#	Add chromosome names
