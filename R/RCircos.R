@@ -528,29 +528,29 @@ RCircos.Chromosome.Ideogram.Plot<-function()
 		#	_________________________________________________________
 		#	xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
-		pos.x<- c(RCircos.Pos[start:end,1]*outer.location, 
-			  	RCircos.Pos[end:start,1]*inner.location);
-		pos.y<- c(RCircos.Pos[start:end,2]*outer.location, 
-				RCircos.Pos[end:start,2]*inner.location);
-		polygon(pos.x, pos.y);
+	#	pos.x<- c(RCircos.Pos[start:end,1]*outer.location, 
+	#		  	RCircos.Pos[end:start,1]*inner.location);
+	#	pos.y<- c(RCircos.Pos[start:end,2]*outer.location, 
+	#			RCircos.Pos[end:start,2]*inner.location);
+	#	polygon(pos.x, pos.y);
 
 
 		#	Add chromosome names
 		#	_________________________________________________________
 		#	xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
-		chr.name <- sub(pattern="chr", replacement="", chroms[a.chr]);
-		text(RCircos.Pos[mid,1]*RCircos.Par$chr.name.pos,
-			RCircos.Pos[mid,2]*RCircos.Par$chr.name.pos,
-			label=chr.name, srt=RCircos.Pos$degree[mid]);
+	#	chr.name <- sub(pattern="chr", replacement="", chroms[a.chr]);
+	#	text(RCircos.Pos[mid,1]*RCircos.Par$chr.name.pos,
+	#		RCircos.Pos[mid,2]*RCircos.Par$chr.name.pos,
+	#		label=chr.name, srt=RCircos.Pos$degree[mid]);
 
 
 		#	Add chromosome highlights
 		#	_________________________________________________________
 		#	xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
-		lines(RCircos.Pos[start:end,]*RCircos.Par$highlight.pos, 
-				col=chr.color, lwd=RCircos.Par$highlight.width);
+	#	lines(RCircos.Pos[start:end,]*RCircos.Par$highlight.pos, 
+	#			col=chr.color, lwd=RCircos.Par$highlight.width);
 	}
 	
 
